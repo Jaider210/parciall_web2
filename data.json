@@ -1,0 +1,42 @@
+[
+  {
+    "id": 3,
+    "codigo_empleado": "E1928",
+    "name": "Jefferson Escobar",
+    "Departamento": "QA",
+    "Posicion": "QA",
+    "Salario": 2500000,
+    "Fecha_Ingreso": "2024-10-01",
+    "Activo": true
+  },
+  {
+    "id": 4,
+    "codigo_empleado": "E1620",
+    "name": "Jose Alexis Mejia",
+    "Departamento": "Desarrollo",
+    "Posicion": "Desarrollador SQL",
+    "Salario": 3500000,
+    "Fecha_Ingreso": "2024-11-01",
+    "Activo": true
+  },
+  {
+    "id": 3,
+    "codigo_empleado": "E2964",
+    "name": "Jhaider Ramírez Cardona",
+    "Departamento": "Desarrollo",
+    "Posicion": "Desarrollador FrontEnd",
+    "Salario": 5500000,
+    "Fecha_Ingreso": "2024-11-01",
+    "Activo": true
+  },
+  {
+    "id": 4,
+    "codigo_empleado": "E2900",
+    "name": "Pepito Peréz",
+    "Departamento": "QA",
+    "Posicion": "QA",
+    "Salario": 5500000,
+    "Fecha_Ingreso": "2024-11-01",
+    "Activo": true
+  }
+]

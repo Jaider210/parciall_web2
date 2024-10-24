@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "bc1c9067-4520-4bc3-9e05-75bf3d58a789",
+		"name": "GESTION EMPLEADOS API",
+		"description": "API para gestion de empleados (agregar, editar y eliminar empleados).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "666013"
+	},
+	"item": [
+		{
+			"name": "Traer Todos los Empleados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer Empleado por Codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/employee/E1928",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"E1928"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Nuevo Empleado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_empleado\": \"E2900\",\r\n    \"name\": \"Pepito Peréz\",\r\n    \"Departamento\": \"QA\",\r\n    \"Posicion\": \"QA\",\r\n    \"Salario\": 5500000,\r\n    \"Fecha_Ingreso\": \"2024-11-01\",\r\n    \"Activo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Empleado por Codigo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"codigo_empleado\": \"E2964\",\r\n    \"name\": \"Jhaider Ramírez Cardona\",\r\n    \"Departamento\": \"Desarrollo\",\r\n    \"Posicion\": \"Desarrollador FrontEnd\",\r\n    \"Salario\": 5800000,\r\n    \"Fecha_Ingreso\": \"2024-09-12\",\r\n    \"Activo\": true\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/employees/E2964",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"E2964"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empleado por Codigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees/E2964",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"E2964"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descargar PDF Empleado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employees/E2964/pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"E2964",
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
